@@ -29,35 +29,33 @@
     <section>
         <div class="container" >            
             <div class="telalogin">
-                <div class="row col-12" >                    
-                    <div class="parteA col-12 col-md-6 col-lg-6">
-                        <div class="mt-4 mx-2">
-                            <img src="img/LOGOGENERIC_LOGO.svg" alt="">
-                        </div>
-                        <div class="tbox">                            
-                            <h4 class="">Criar conta</h4>
-                            <p class="mb-0 mt-2">Username</p>
-                            <input class="input-group-sm"  type="text">
-                            <p class="mb-0 mt-2">Password</p>
-                            <input class="input-group-sm" type="text">
-                            <button class=" btn btn-dark mt-2" type="submit" id="ButtonmensagemSucesso">Cadastrar</button>       
-                            <!-- <button class=" btn btn-dark mt-2" type="submit" id="meuGit">Git</button>        -->
-                            <div class="aLinha px-1">
-                                <div class="row col-12">
-                                    <a class="nav-link link-dark col-6" href="#">Esqueceu sua senha?</a>
-                                    <a class="nav-link link-dark col-6" href="#">Sou cadastrado</a>    
-                                </div>                                
-                            </div>
-                        </div>
-                    </div>                    
-                    <div class="parteB col-md-6 col-lg-6 d-none d-md-block">
-                        <div class="container2 mx-2 pt-3">
-                            <div class="animate__animated animate__bounce ">
-                                <img src="img/LOGOGENERIC_SIMB.svg" alt="">
-                            </div>
-                        </div>
-                    </div>
+                <div class="card">
+                    <div class="card-header topMenu">
+                    <h4 class="my-0 font-weight-normal">Pedidos</h4>
                 </div>
+                    <div class="card-body">
+                    <div id="atendimentoAlterarStatus">
+                        <input checked="checked" id="" name="" type="checkbox" value="true">
+                        <label style="color: black;">Criar Pedidos</label><br>
+                    </div>
+                    <div id="atendimentoAlterarStatus">
+                        <input checked="checked" id="" name="" type="checkbox" value="true">
+                        <label style="color: black;">Alterar Status </label><br>
+                    </div>
+                    <input class="ml-3" id="" name="" type="checkbox" value="true">
+                    <label>Cancelar após alterar</label><br>
+                    <input  class="ml-3" id="" name="" type="checkbox" value="true">
+                    <label>Entregue</label><br>
+                    <input  class="ml-3" id="" name="" type="checkbox" value="true">
+                    <label>Espera</label><br>
+                    <input checked="checked" class="ml-3" id="" name="" type="checkbox" value="true">
+                    <label>Pronto</label><br>
+                    <input checked="checked" class="ml-3" id="" name="" type="checkbox" value="true">
+                    <label>Cancelar</label>
+                    <br>
+                    <button id="teste" class="btn btn-danger" onclick="selecionarTodosCheckboxes()">All</button>
+                </div>
+            </div>
             </div>
         </div>
     </section>
